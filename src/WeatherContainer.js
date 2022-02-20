@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import DisplayWeather from "./DisplayWeather";
 
-function WeatherContainer() {
+
+function WeatherContainer({weather}) {
+
   return (
     <div>
-      
+      <DisplayWeather  weather={weather}/>
+     
     </div>
   )
 }
 
-export default WeatherContainer
+export default WeatherContainer;
