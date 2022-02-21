@@ -12,12 +12,11 @@ useEffect(() => {
 }, [])
 
     function getData() {
-        //to avoid CORS error
-        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://weatherdbi.herokuapp.com/data/weather/${searchInput}`)}`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=imperial&APPID=cd8959f2d711c030f501590baf4eac4b`)
         .then(res=>res.json())
         .then(data=> {
-            const weatherData=JSON.parse(data.contents)
-            setWeather(weatherData)
+            // console.log(data)
+            setWeather(data)
         })
     }
     
