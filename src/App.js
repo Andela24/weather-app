@@ -1,43 +1,34 @@
-import React, {useEffect, useState} from "react";
-import WeatherContainer from "./WeatherContainer"
-import Header from "./Header"
-import Search from "./Search"
-import About from "./About"
+import React, { useEffect, useState } from 'react';
+import WeatherContainer from './WeatherContainer';
+import Header from './Header';
+import Search from './Search';
+import About from './About';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Home'
 
 function App() {
-  const [weather, setWeather] = useState({
-    
-      "region": "",
-      "currentConditions": {
-          "dayhour": "",
-          "temp": {
-              "c": 0,
-              "f": 0
-          },
-          "precip": "0%",
-          "humidity": "0%",
-          "wind": {
-              "km": 0,
-              "mile": 0
-          },
-          "iconURL": "",
-          "comment": ""
-      },
-  })
+  const [weather, setWeather] = useState({});
 
-  useEffect(()=> {
-
-  }, [weather])
-
- 
+  useEffect(() => {}, [weather]);
 
   return (
-    <div className="App">
-      <Header />
-      <Search setWeather={setWeather}/>
-      <WeatherContainer weather={weather} />
-      <About />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+            <Route path="/search">
+              <Search setWeather={setWeather} />
+              <WeatherContainer weather={weather} />
+            </Route>
+            <Route path="/about">
+              <About />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
