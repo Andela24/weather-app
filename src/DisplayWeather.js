@@ -4,6 +4,7 @@ function DisplayWeather ({weather}) {
     console.log(weather)
   return (
     <div>
+        <h1>{weather.region} </h1>
       <ul>
           <li> Current Conditions: {weather.currentConditions.comment}</li>
           <li>{weather.currentConditions.dayhour} </li>

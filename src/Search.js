@@ -1,12 +1,15 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 function Search({setWeather}) {
 
-    const [searchInput, setSearchInput] = useState("")
+    const [searchInput, setSearchInput] = useState("New York")
 
 // // function handleChange(e) {
 // //     setSearchInput(e.target.value)
 // }
+useEffect(() => {
+    getData(searchInput)
+}, [])
 
     function getData() {
         //to avoid CORS error
