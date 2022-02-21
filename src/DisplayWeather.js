@@ -26,7 +26,6 @@ function DisplayWeather ({weather}) {
           <td>{weather?.wind?.speed}</td>
           <td><img src={`.src/icons/${weather?.weather?.[0].icon}.png`} alt="pic"/></td>
          
-
         </tr>
 
       </table>

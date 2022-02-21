@@ -9,6 +9,7 @@ function About() {
           <p>You can contact me at <a href="mailto:andjela.s166@gmail.com"> Email</a> 
           </p>
     </div>
+   
   )
 }
 
