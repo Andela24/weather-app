@@ -6,6 +6,7 @@ import About from './About';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home'
 
+
 function App() {
   const [weather, setWeather] = useState({});
   const [cities, setCities] = useState([])
