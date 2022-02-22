@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DisplayWeather from "./DisplayWeather";
 
-function Favorites() {
-const [cities, setCities] = useState([])
+function Favorites({cities, setCities}) {
 const [weather, setWeather] = useState(null)
 
   useEffect(() => {
@@ -20,6 +19,7 @@ const [weather, setWeather] = useState(null)
         
     })
   }
+
 
 const favoriteCities = cities.map(city => {
   return <li key={city.id} onClick={() => getData(city.name)}>{city.name}</li>
