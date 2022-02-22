@@ -71,6 +71,7 @@ function DisplayWeather({ weather }) {
  return (
    <div>
      <table className="container">
+       <tbody>
        <tr>
          <th>City</th>
          <th>Temp</th>
@@ -89,9 +90,9 @@ function DisplayWeather({ weather }) {
          <td>{weather?.main?.feels_like}</td>
          <td>{weather?.main?.humidity}</td>
          <td>{weather?.wind?.speed}</td>
-         <img src={imageFinder()} alt="pic" />
+         <td><img src={imageFinder()} alt="pic" /></td>
        </tr>
- 
+      </tbody>
      </table>
 
     </div>
