@@ -8,6 +8,7 @@ import Home from './Home'
 
 function App() {
   const [weather, setWeather] = useState({});
+  const [cities, setCities] = useState([])
 
   useEffect(() => {}, [weather]);
 
@@ -20,8 +21,8 @@ function App() {
             <Home />
           </Route>
             <Route path="/search">
-              <Search setWeather={setWeather} />
-              <WeatherContainer weather={weather} />
+              <Search setWeather={setWeather} cities={cities} setCities={setCities} />
+              <WeatherContainer weather={weather} cities={cities} setCities={setCities} />
             </Route>
             <Route path="/about">
               <About />
