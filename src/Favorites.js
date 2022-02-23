@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DisplayWeather from "./DisplayWeather";
+import env from "react-dotenv";
 
 function Favorites({cities, setCities}) {
 const [weather, setWeather] = useState(null)
@@ -11,7 +12,7 @@ const [weather, setWeather] = useState(null)
   }, [])
 
   function getData(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=5685f5c2782b520a807b23db45da41b9`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${env.KEY}`)
     .then(res=>res.json())
     .then(data=> {
         // console.log(data)
