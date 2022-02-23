@@ -73,7 +73,7 @@ function DisplayWeather({ weather }) {
    <div>
      <table className="container">
        <tbody>
-       <tr className="row">
+       <tr>
          <th>City</th>
          <th>Temp</th>
          <th>Current Condition</th>
