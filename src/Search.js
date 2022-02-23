@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Button from '@mui/material/Button';
 import env from "react-dotenv";
+import TextField from '@mui/material/TextField';
 
 function Search({setWeather, cities, setCities}) {
 const [searchInput, setSearchInput] = useState("New York")
@@ -12,8 +13,9 @@ useEffect(() => {
 }, [])
 
 
+
     function addFavorites() {
-    fetch(` http://localhost:3000/favorites`, {
+    fetch(`http://localhost:3000/favorites`, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -40,10 +42,11 @@ useEffect(() => {
     
   return (
     <div>
-        <input type="text" placeholder="Search city" value={searchInput} onChange={(e) => setSearchInput(e.target.value)}></input>
+        <TextField id="outlined-size-small" label="Search City" variant="outlined" type="text" placeholder="Search city" size="small" value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
         <Button variant="outlined" onClick={getData}>Search</Button>
         <Button variant="outlined" onClick={addFavorites}>Add to Favorites</Button>
-    </div>
+        </div>    
+    
   )
 }
 

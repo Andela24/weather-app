@@ -1,4 +1,5 @@
 import React from "react";
+import "./DisplayWeather"
 import img01d from "./icons/01d.png";
 import img01n from "./icons/01n.png";
 import img02d from "./icons/02d.png";
@@ -72,7 +73,7 @@ function DisplayWeather({ weather }) {
    <div>
      <table className="container">
        <tbody>
-       <tr>
+       <tr className="row">
          <th>City</th>
          <th>Temp</th>
          <th>Current Condition</th>

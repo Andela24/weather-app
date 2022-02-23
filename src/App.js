@@ -5,13 +5,14 @@ import Search from './Search';
 import About from './About';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Home'
+import './App.css'
 
 
 function App() {
   const [weather, setWeather] = useState({});
   const [cities, setCities] = useState([])
 
-  useEffect(() => {}, [weather]);
+
 
   return (
     <Router>

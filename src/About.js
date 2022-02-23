@@ -1,12 +1,16 @@
 import React from 'react'
+import "./About.css"
 
 function About() {
+
   return (
-    <div>
+    <div className="about">
       <h1>About the author</h1>
       <p> This application was developed by Angela Stevanovic during the Phase-2 at Flatiron School.
           </p>
           <p>You can contact me at <a href="mailto:andjela.s166@gmail.com"> Email</a> 
+          <p>You can check my work at <a href="https://github.com/Andela24">GitHub</a>
+          </p>
           </p>
     </div>
    

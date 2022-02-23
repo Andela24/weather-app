@@ -20,6 +20,12 @@ const [weather, setWeather] = useState(null)
         
     })
   }
+//   function handleDelete(id) {
+//     fetch(`http://localhost:3000/favorites`,{
+//     method: "DELETE",
+//     })
+//     .then(console.log)
+// }
 
 
 const favoriteCities = cities.map(city => {
