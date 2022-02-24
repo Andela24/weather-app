@@ -1,13 +1,14 @@
 body {
     background-color: #EEEEEE;
-    font-family: "Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-table.containter {
+/* table.containter {
    display: flex; 
    align-items: center;
-}
+} */
 .container {
-    color: #1C658C;
+    color: rgb(122, 47, 176);
+    /* #1C658C; */
 }
 .picture {
     width:520px;
@@ -24,7 +25,8 @@ h1 {
     color: #EEEEEE;
     padding: 40px;
     text-align: center;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 button.link {
     font-family: "Verdana" sans-serif;
@@ -35,6 +37,6 @@ button.link {
 	padding: 0;
 	border: none;
 	cursor: pointer;
-    color: indigo;
+    color: rgb(6, 94, 46);
     text-decoration: underline;
 }
