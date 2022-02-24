@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import DisplayWeather from './DisplayWeather';
 import env from 'react-dotenv';
 import "./DisplayWeather.css"
+import Button from '@mui/material/Button';
 
 function Favorites({ cities, setCities, handleDelete }) {
   const [weather, setWeather] = useState(null);
@@ -27,11 +28,11 @@ function Favorites({ cities, setCities, handleDelete }) {
   const favoriteCities = cities.map((city) => {
     return (
       <li key={city.id}>
-        <button className="link" onClick={() => getData(city.name)}>{city.name} </button>
+        <button className="link" onClick={() => getData(city.name)}>{city.name + "   -            "} </button>
         {/* <a href="#" onClick={() => getData(city.name)}>
           {city.name}
         </a> */}
-        <button onClick={() => handleDelete(city.id)}>Delete</button>
+        <Button onClick={() => handleDelete(city.id)}>Delete</Button>
       </li>
     );
   });
