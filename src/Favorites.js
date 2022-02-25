@@ -28,7 +28,7 @@ function Favorites({ cities, setCities, handleDelete }) {
   const favoriteCities = cities.map((city) => {
     return (
       <li key={city.id}>
-        <button className="link" onClick={() => getData(city.name)}>{city.name + " - "} </button>
+        <button className="link" onClick={() => getData(city.name)}>{city.name} </button>
         {/* <a href="#" onClick={() => getData(city.name)}>
           {city.name}
         </a> */}

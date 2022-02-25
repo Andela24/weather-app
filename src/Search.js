@@ -38,8 +38,6 @@ function Search({setWeather, cities, setCities}) {
             setSearchInput("") //clear out input
         })
     }
-
-    
     
   return (
     <div>
