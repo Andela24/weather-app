@@ -14,7 +14,10 @@ I used react-router to establish three client-side routes, json-server to create
 * Delete Favorite City
 * About author page
 
-
+## Installation 
+1. Run npm install in your terminal.
+2. Run npm run dev to watch json.server.
+3. Open new terminal and run npm start.
 
 ## How To Use
    1. Loads Home Page with basic picture and navigation links.
