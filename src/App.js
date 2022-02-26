@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
 
-  }, [weather])
+  }, [weather]) //components re- render if any dependency changes/ c
 
   function handleDelete(id) {
     // console.log('delete city', city)
