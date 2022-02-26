@@ -27,12 +27,14 @@ I used react-router to establish three client-side routes, json-server to create
    8. You will not be able to input blank content if the city name is not specified.
    9. You may also check the weather in your "favorite city" by clicking on it.
    10. You may delete any cities from your list that you no longer desire.
-   11. Go to About link to check details about author.
+   11. Go to the About page to check the details about author.
 
 ## Technologies Used
-    [React](https://reactjs.org)
-    [Material UI](https://mui.com)
-    [React Router](https://reactrouter.com)
+   This app was made by using:
+   * React
+   * CSS
+   * Material UI
+   * React Router
 
 
 
