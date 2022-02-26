@@ -20,10 +20,10 @@ function Search({setWeather, cities, setCities}) {
     function addFavorites() {
         if(searchInput === "") return null;
         const array = cities.find((city) => {
-        return (city.name === searchInput)
+        return (city.name.toLowerCase() === searchInput.toLowerCase())
         })
         if(array) {
-            alert("Already exist.")
+            alert("City already exist.")
             setSearchInput("")
         }
         else {
