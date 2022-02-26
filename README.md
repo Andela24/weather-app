@@ -30,9 +30,9 @@ I used react-router to establish three client-side routes, json-server to create
    11. Go to About link to check details about author.
 
 ## Technologies Used
-    * [React] (https://reactjs.org/)
-    * [Material UI] (https://mui.com/)
-    * [React Router] (https://reactrouter.com/)
+    [React] (https://reactjs.org/)
+    [Material UI] (https://mui.com/)
+    [React Router] (https://reactrouter.com/)
 
 
 
