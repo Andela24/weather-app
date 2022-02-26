@@ -12,10 +12,22 @@ function Search({setWeather, cities, setCities}) {
         getData(searchInput)
     }, [])
 
+    //To make sure you don't add the same city, do a .find on the array of cities.
+    // If it shows up, you could display an error message. 
+    // If doesn't, you could go ahead and add it.
 
 
     function addFavorites() {
-        fetch(`http://localhost:3000/favorites`, {
+        if(searchInput === "") return null;
+        const array = cities.find((city) => {
+        return (city.name === searchInput)
+        })
+        if(array) {
+            alert("Already exist.")
+            setSearchInput("")
+        }
+        else {
+          fetch(`http://localhost:3000/favorites`, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
@@ -28,6 +40,8 @@ function Search({setWeather, cities, setCities}) {
             setSearchInput("")
         })
     }
+}
+      
 
     function getData() {
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=imperial&APPID=${env.KEY}`)
