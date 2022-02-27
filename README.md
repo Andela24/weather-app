@@ -25,12 +25,13 @@ I used React-Router to establish three client-side routes, json-server to create
     3. When you click on "Search" by default you will see New York.
    4. You can search for any city you would like and it will give you weather information regarding chosen city with brief description of current temperature, current condition, feels like, huminidity, wind and day/night picture.
    5. The Favorite section has all the cities you have chosen as your favorite.
-   6. You can add any city to your favorites.
+   6. You can add any desire city to your favorites.
    7. You won't be able to add a city that already exists on your list.
    8. You will not be able to input blank content if the city name is not specified.
-   9. You may also check the weather in your "favorite city" by clicking on it.
-   10. You may delete any cities from your list that you no longer desire.
-   11. Go to the About page to check the details about author.
+   9. You may also check the weather details in your "favorite city" by clicking on it.
+   10. All uppercase or lower case is equally effective.
+   11. You may delete any cities from your list that you no longer desire.
+   12. Go to the About page to check the details about author.
 
 ## Technologies Used
    This app was made by using:
