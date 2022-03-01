@@ -7,7 +7,7 @@ function WeatherContainer({weather, cities, setCities, handleDelete }) {
 
   return (
     <div className="container">
-      <DisplayWeather  weather={weather}/>
+      { weather ? <DisplayWeather  weather={weather}/> : <p>The page is loading.</p> }
      <Favorites cities={cities} setCities={setCities} handleDelete={handleDelete}/>
     </div>
   )

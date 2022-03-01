@@ -9,12 +9,9 @@ import './DisplayWeather.css'
 
 
 function App() {
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState(null); 
   const [cities, setCities] = useState([])
 
-  useEffect(() => {
-
-  }, [weather]) //components re- render if any dependency changes/ c
 
   function handleDelete(id) {
     // console.log('delete city', city)

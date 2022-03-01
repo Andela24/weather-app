@@ -47,7 +47,7 @@ function Favorites({ cities, setCities, handleDelete }) {
     <div>
       <h1>Favorites: </h1>
       {favoriteCities}
-      {weather ? <DisplayWeather weather={weather} /> : null}
+      {weather && <DisplayWeather weather={weather} />}
     </div>
   );
 }

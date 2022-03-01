@@ -68,7 +68,8 @@ function DisplayWeather({ weather }) {
        
    }
  }
- 
+  
+
  return (
    <div>
      <table className="container">
@@ -85,12 +86,12 @@ function DisplayWeather({ weather }) {
        </tr>
  
        <tr>
-         <td>{weather?.name}</td>
-         <td>{weather?.main?.temp} F</td>
-         <td>{weather?.weather?.[0].description}</td>
-         <td>{weather?.main?.feels_like}</td>
-         <td>{weather?.main?.humidity}</td>
-         <td>{weather?.wind?.speed}</td>
+         <td>{weather.name}</td>
+         <td>{weather.main.temp} F</td>
+         <td>{weather.weather[0].description}</td>
+         <td>{weather.main.feels_like}</td>
+         <td>{weather.main.humidity}</td>
+         <td>{weather.wind.speed}</td>
          <td><img src={imageFinder()} alt="pic" /></td>
        </tr>
       </tbody>
