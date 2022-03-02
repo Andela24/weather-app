@@ -29,19 +29,10 @@ function Favorites({ cities, setCities, handleDelete }) {
     return (
       <li key={city.id}>
         <button className="link" onClick={() => getData(city.name)}>{city.name} </button>
-        {/* <a href="#" onClick={() => getData(city.name)}>
-          {city.name}
-        </a> */}
         <Button variant="secondary" size="small" onClick={() => handleDelete(city.id)}>Delete</Button>
       </li>
     );
   });
-   //handle delete should delete from db.json
-   //should delete from the dom
-   //change the state,remove from state and re-render
-
-   //fetch from db.json
-   //where handleDelete should leave
 
   return (
     <div>

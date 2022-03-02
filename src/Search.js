@@ -12,11 +12,6 @@ function Search({setWeather, cities, setCities}) {
         getData(searchInput)
     }, [])
 
-    //To make sure you don't add the same city, do a .find on the array of cities.
-    // If it shows up, you could display an error message. 
-    // If doesn't, you could go ahead and add it.
-
-
     function addFavorites() {
         if(searchInput === "") return null;
         const array = cities.find((city) => {
@@ -49,7 +44,7 @@ function Search({setWeather, cities, setCities}) {
         .then(data=> {
             // console.log(data)
             setWeather(data)
-            setSearchInput("") //clear out input
+            setSearchInput("") 
         })
     }
     
