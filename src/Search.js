@@ -44,12 +44,13 @@ function Search({setWeather, cities, setCities}) {
             setSearchInput("") 
         })
     }
-    
+  
   return (
     <div>
         <TextField id="outlined-size-small" label="Search City" variant="outlined" type="text" placeholder="Search city" size="small" value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
         <Button variant="outlined" onClick={getData}>Search</Button>
         <Button variant="outlined" onClick={addFavorites}>Add to Favorites</Button>
+        
     </div>    
     
   )

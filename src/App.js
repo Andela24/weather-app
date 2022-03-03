@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import WeatherContainer from './WeatherContainer';
 import Header from './Header';
 import Search from './Search';

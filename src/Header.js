@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import "./DisplayWeather.css"
 
 function Header() {
+
   return (
     <div>
       <h1>Weather App</h1>
