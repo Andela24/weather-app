@@ -19,7 +19,6 @@ function Favorites({ cities, setCities, handleDelete }) {
     )
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data)
         setWeather(data);
       });
   }

@@ -14,7 +14,6 @@ function App() {
 
 
   function handleDelete(id) {
-    // console.log('delete city', city)
     fetch(`http://localhost:3000/favorites/${id}`, {
       method: "DELETE"
   })    

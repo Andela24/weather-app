@@ -6,8 +6,6 @@ import TextField from '@mui/material/TextField';
 function Search({setWeather, cities, setCities}) {
     const [searchInput, setSearchInput] = useState("New York")
 
-
-
     useEffect(() => {
         getData(searchInput)
     }, [])
@@ -42,7 +40,6 @@ function Search({setWeather, cities, setCities}) {
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=imperial&APPID=${env.KEY}`)
         .then(res=>res.json())
         .then(data=> {
-            // console.log(data)
             setWeather(data)
             setSearchInput("") 
         })
