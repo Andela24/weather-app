@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function LikeBtn() {
     const [count, setCount] = useState(0)
@@ -14,8 +16,8 @@ function LikeBtn() {
     }
   return (
     <div>
-        <input type="text" placeholder="enter number" value={formData} onChange={handleForm} />
-      <button onClick={handleCount}>Like {count} </button>
+        <TextField size="small" type="text" placeholder="enter number" value={formData} onChange={handleForm} />
+      <Button variant="outlined" onClick={handleCount}>Like {count} </Button>
     </div>
   )
 }
