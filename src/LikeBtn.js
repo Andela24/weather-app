@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 function LikeBtn() {
     const [count, setCount] = useState(0)
     // const [formData, setFormData]= useState("")
-    // const [inputNum, setInputNum]=useState([])
+   
 
     function handleCount() {
         setCount((count) => count + 1)
